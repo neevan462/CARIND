@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="Admin.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Admin.html">Home</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="Products.html">Queries</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>CARIND USERLIST</h2>
+        </section>
+
+        <section id="users">
+             
+            <form action="UsersList" method="post">
+            <label for="g" style="font-size:30px;">Click to view Users</label>
+            <input type="submit" name="g" value="Users">
+            </form>
+        </section>
+    </main>
+
+    <script>
+    document.getElementById("logoutBtn").addEventListener("click", function() {
+        // Perform logout functionality here
+        alert("Logged out successfully!");
+    });
+    </script>
+</body>
+</html>

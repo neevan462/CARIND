@@ -1,0 +1,136 @@
+body{
+    background-color: aliceblue;
+}
+#navigation{
+    background: #E3E6F3;
+    margin-top: 5px;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 5px 15px #0000000f;
+    z-index: 999;
+    position: top;
+    left: 0;
+    right: 0;
+    position: sticky;
+}
+#navigation >.text{
+    position: absolute;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    color: black;
+    left: 10px;
+    top:10px;
+}
+#signin{
+    position: absolute;
+    right:10px;
+    width: 50px;
+}
+.search ul{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    gap: 50px;
+    top:10px;
+    right: 200px;
+}
+
+.search ul li{
+    list-style: none;
+}
+.search ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+.search ul li a:hover{
+   color: #088178;
+}
+.search ul li a.active::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#hero{
+ background-image: url(./Images/hero.jpeg);  
+ height: 90vh;
+ width: 94%;
+ background-size: cover;
+ background-position: top 20% right 0;
+ display: flex;
+ flex-direction: column;
+ padding-left: 80px;
+ background-color: coral;
+
+}
+#hero h1{
+    color: #088178;
+    font-size: 25px;
+}
+#hero h3
+{
+    color: coral;
+    font-weight: 700;
+}
+#hero h5{
+    color: darkolivegreen;
+}
+#product1{
+    text-align: center;
+}
+#product1 .div{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.inner-container{
+    display: flex;
+}
+.des{
+    padding-top: 40px;
+}
+.buy{
+    padding-top: 6px;
+    display: inline flex;
+    gap:30px;
+}
+.buy a{
+    text-decoration: none;
+}
+#btn{
+    padding-top: 3px;
+    border-radius: 5px;
+    width: 50px;
+    height: 25px;
+    background-color: gray;
+    color: black;
+}
+
+
+/*footer css*/
+#foot{
+   background-color: dimgray;
+}
+.foot-division{
+   display: grid;
+   margin-top: 30px;
+   grid-template-columns: auto auto auto;
+   justify-content: space-around;
+}
+.quickresponse{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.quickresponse > pr> a{
+    text-decoration: none;
+    color: #1a1a1a;
+
+}.inner-container{
+    background-color: white;
+}

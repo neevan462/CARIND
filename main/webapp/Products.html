@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="Admin.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Admin.html">Home</a></li>
+            <li><a href="Users.html">Users</a></li>
+            <li><a href="#">Queries</a></li>
+            <li><a href="AdminOrder.html">Orders</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>USERS QUERYLIST</h2>
+             
+        </section>
+        <section id="Queries">
+            <form action="DisplayQueriesServlet" method="post">
+            <label for="g" style="font-size:25px;">Tap to view Queries:</label>
+            <input type="submit" name="g" value="Queries">
+            </form>
+        </section>
+
+        <section id="Orders">
+            
+            <!-- Content for settings section -->
+        </section>
+    </main>
+
+    <script>
+    document.getElementById("logoutBtn").addEventListener("click", function() {
+        // Perform logout functionality here
+        alert("Logged out successfully!");
+    });
+    </script>
+</body>
+</html>
